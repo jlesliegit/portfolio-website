@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="m-0">
+  <body class="m-0 bg-[#fffff8]">
     <!-- Nav header -->
     <header
       class="fixed top-0 left-0 w-full bg-[#D6D6CA] px-4 py-3 text-black max-sm:flex-col max-sm:gap-3 z-10"
@@ -34,7 +34,11 @@
       id="about"
     >
       <div>
-        <img src="Images/profile image.jpeg" class="size-50 rounded-[50%]" />
+        <img
+          src="Images/profile image.jpeg"
+          alt="Jack Leslie's headshot"
+          class="size-50 rounded-[50%]"
+        />
       </div>
       <div class="flex flex-col gap-4 max-sm:items-center">
         <h1 class="text-4xl">Jack Leslie</h1>
@@ -48,30 +52,49 @@
       </div>
     </section>
     <!-- Projects -->
-    <main class="flex flex-col items-center justify-center">
-      <h3 class="text-3xl text-center mb-6">Projects</h3>
+    <main class="flex flex-col items-center justify-center" id="portfolio">
+      <h2 class="text-3xl text-center mb-6">Projects</h2>
       <div class="grid grid-cols-3 gap-1 items-center justify-center">
         <div class="flex justify-center">
-          <img src="https://placehold.co/200x200" class="object-cover" />
+          <img src="https://placehold.co/200x200" alt="" class="object-cover" />
         </div>
         <div class="flex justify-center">
-          <img src="https://placehold.co/200x200" class="object-cover" />
+          <img src="https://placehold.co/200x200" alt="" class="object-cover" />
         </div>
         <div class="flex justify-center">
-          <img src="https://placehold.co/200x200" class="object-cover" />
+          <img src="https://placehold.co/200x200" alt="" class="object-cover" />
         </div>
         <div class="flex justify-center">
-          <img src="https://placehold.co/200x200" class="object-cover" />
+          <img src="https://placehold.co/200x200" alt="" class="object-cover" />
         </div>
         <div class="flex justify-center">
-          <img src="https://placehold.co/200x200" class="object-cover" />
+          <img src="https://placehold.co/200x200" alt="" class="object-cover" />
         </div>
         <div class="flex justify-center">
-          <img src="https://placehold.co/200x200" class="object-cover" />
+          <img src="https://placehold.co/200x200" alt="" class="object-cover" />
         </div>
       </div>
     </main>
 
-    <footer></footer>
+    <footer
+      class="flex flex-col gap-4 mt-20 pl-4 bg-[#d6d6ca] p-6 justify-center items-center"
+    >
+      <h3 class="text-3xl">Contact me</h3>
+      <p class="text-lg">
+        If you would like to get in touch regarding any of my work, please reach
+        out
+      </p>
+      <div class="flex gap-4">
+        <a href="mailto:jackandrewleslie@gmail.com"
+          ><i class="fa-regular fa-envelope text-3xl"></i
+        ></a>
+        <a href="https://github.com/jlesliegit"
+          ><i class="fa-brands fa-square-github text-3xl"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/jack-leslie-/"
+          ><i class="fa-brands fa-linkedin text-3xl"></i
+        ></a>
+      </div>
+    </footer>
   </body>
 </html>
