@@ -12,20 +12,42 @@
     ></script>
   </head>
   <body class="m-0">
+    <!-- Nav header -->
     <header
-      class="fixed top-0 left-0 w-full bg-slate-200 px-4 py-3 text-black max-sm:flex-col max-sm:gap-3 z-10"
+      class="fixed top-0 left-0 w-full bg-[#D6D6CA] px-4 py-3 text-black max-sm:flex-col max-sm:gap-3 z-10"
     >
       <nav
-        class="flex justify-between items-center bg-slate-200 px-4 py-3 w-full text-black max-sm:flex-col max-sm: gap-3"
+        class="flex justify-between items-center px-4 py-3 w-full text-black max-sm:flex-col max-sm: gap-3"
       >
         <p class="text-xl">Jack Leslie</p>
         <div class="flex gap-3">
-          <a href="#" class="hover:font-bold">About</a>
-          <a href="#" class="hover:font-bold">Portfolio</a>
+          <a href="#about" class="hover:font-bold">About</a>
+          <a href="#portfolio" class="hover:font-bold">Portfolio</a>
           <a href="#" class="hover:font-bold">Contact me</a>
         </div>
       </nav>
     </header>
 
+    <!-- About me -->
+    <section
+      class="grid grid-cols-2 gap-20 items-center justify-items-center mt-20 p-30 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:gap-10"
+      id="about"
+    >
+      <div>
+        <img src="Images/profile image.jpeg" class="size-50 rounded-[50%]" />
+      </div>
+      <div class="flex flex-col gap-4 max-sm:items-center">
+        <h1 class="text-4xl">Jack Leslie</h1>
+        <p class="text-md italic">Aspiring software dev</p>
+        <p class="max-w-8/10 max-sm:max-w-full max-sm:items-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          nisi id deserunt reprehenderit omnis amet consequuntur dolore, labore
+          nihil ex ducimus mollitia inventore debitis dolorem excepturi fugit
+          quia sapiente aliquid!
+        </p>
+      </div>
+    </section>
+    <!-- Projects -->
+    
   </body>
 </html>
