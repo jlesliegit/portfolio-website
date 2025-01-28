@@ -34,8 +34,18 @@ function showProjectDetails(projectIndex) {
     .then((data) => {
       const modalTitle = document.querySelector('.modalTitle');
       const modalText = document.querySelector('.modalBody');
+      const modalImage = document.querySelector('.modalImage');
       const result = data.projects[projectIndex];
+
       modalTitle.innerHTML = `${result.title}`;
-      modalText = innerHTML = `${result.description}`;
+      modalText.innerHTML = `${result.description}`;
+
+      const image = document.createElement('img');
+      image.src = result.image;
+      image.alt = result.alt;
+      image.className = 'w-full h-60 object-cover';
+
+      modalImage.innerHTML = '';
+      modalImage.appendChild(image);
     });
 }
