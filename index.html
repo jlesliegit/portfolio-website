@@ -69,7 +69,9 @@
           including:
         </p>
 
-        <ul class="max-sm:grid max-sm:grid-cols-2 max-sm:gap-10">
+        <ul
+          class="max-sm:grid max-sm:grid-cols-2 max-sm:gap-10 max-sm:text-center max-sm:font-normal"
+        >
           <li><span class="max-sm:hidden">-</span> JavaScript</li>
           <li><span class="max-sm:hidden">-</span> HTML</li>
           <li><span class="max-sm:hidden">-</span> CSS</li>
@@ -147,6 +149,29 @@
         </div>
       </div>
     </main>
+
+    <!-- Modal -->
+
+    <div
+      class="modal fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] border-2 rounded-lg z-10 bg-white w-500px max-w-[80%]"
+    >
+      <div class="modalHeader flex justify-between pt-4 pl-4 pr-4 items-center">
+        <div class="modalTitle text-lg font-normal">Example title</div>
+        <button class="closeButton cursor-pointer text-2xl">&times;</button>
+      </div>
+      <div class="modalBody p-4">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
+        vitae voluptates, fugiat a rerum deserunt qui? Eaque, accusamus quisquam
+        beatae cum eligendi animi doloribus ex iusto nesciunt consequatur
+        delectus, molestias impedit aliquam qui ipsam, mollitia ab dolore!
+        Perspiciatis minus, numquam enim quisquam, atque sapiente asperiores
+        labore ab dicta inventore praesentium.
+      </div>
+    </div>
+    <!-- <div
+      id="overlay"
+      class="fixed top-0 left-0 right-0 bottom-0 bg-gray-200 bg-opacity-5 opacity-3 pointer-events-none"
+    > -->
 
     <footer
       class="flex flex-col gap-4 mt-20 pl-4 bg-[#d6d6ca] p-6 justify-center items-center max-sm:p-10 max-sm:gap-5"
