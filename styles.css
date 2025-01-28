@@ -1,0 +1,9 @@
+.modal {
+    display: none;
+  }
+  .modal.active {
+    display: block;
+  }
+  .overlay.active {
+    display: block;
+  }
