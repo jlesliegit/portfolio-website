@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="m-0 bg-[#fffff8]">
+  <body class="m-0 bg-[#fffff8] font-thin">
     <!-- Nav header -->
     <header
       class="fixed top-0 left-0 w-full bg-[#D6D6CA] px-4 py-3 text-black max-sm:flex-col max-sm:gap-3 z-10"
@@ -19,11 +19,12 @@
       <nav
         class="flex justify-between items-center px-4 py-3 w-full text-black max-sm:flex-col max-sm: gap-3"
       >
-        <p class="text-xl">Jack Leslie</p>
+        <p class="text-xl max-sm:font-normal">Jack Leslie</p>
+
         <div class="flex gap-3">
-          <a href="#about" class="hover:font-bold">About</a>
-          <a href="#portfolio" class="hover:font-bold">Portfolio</a>
-          <a href="#" class="hover:font-bold">Contact me</a>
+          <a href="#about" class="hover:font-normal">About</a>
+          <a href="#portfolio" class="hover:font-normal">Portfolio</a>
+          <a href="#" class="hover:font-normal">Contact me</a>
         </div>
       </nav>
     </header>
@@ -37,12 +38,16 @@
         <img
           src="Images/profile image.jpeg"
           alt="Jack Leslie's headshot"
-          class="size-50 rounded-[50%]"
+          class="size-70 rounded-full max-sm:size-45"
         />
       </div>
       <div class="flex flex-col gap-4 max-sm:items-center max-sm:gap-8">
-        <h1 class="text-6xl max-sm:text-center">Jack Leslie</h1>
-        <p class="text-xl italic animate-pulse">Aspiring software dev</p>
+        <h1 class="text-6xl max-sm:text-center max-sm:hidden">Jack Leslie</h1>
+        <p
+          class="text-xl italic animate-pulse max-sm:text-center max-sm:font-normal max-sm:animate-none max-sm:not-italic"
+        >
+          Aspiring software dev
+        </p>
         <p
           class="max-w-8/10 text-lg max-sm:max-w-full max-sm:items-center max-sm:text-center"
         >
@@ -60,13 +65,23 @@
           full-stack developer.
         </p>
         <p class="max-sm:text-center">
-          some more text about me - personal info
+          Currently learning how to use a variety of different technologies
+          including:
         </p>
+
+        <ul class="max-sm:grid max-sm:grid-cols-2 max-sm:gap-10">
+          <li><span class="max-sm:hidden">-</span> JavaScript</li>
+          <li><span class="max-sm:hidden">-</span> HTML</li>
+          <li><span class="max-sm:hidden">-</span> CSS</li>
+          <li><span class="max-sm:hidden">-</span> React</li>
+          <li><span class="max-sm:hidden">-</span> PHP</li>
+          <li><span class="max-sm:hidden">-</span> SQL</li>
+        </ul>
       </div>
     </section>
     <!-- Projects -->
     <main class="flex flex-col items-center justify-center" id="portfolio">
-      <h2 class="text-3xl text-center mb-6 max-sm:text-4xl">Projects</h2>
+      <h2 class="text-4xl text-center mb-6 max-sm:text-4xl">Projects</h2>
       <div
         class="grid grid-cols-3 gap-15 items-center justify-center mt-10 max-sm:grid-cols-1 max-sm:px-4 max-sm:gap-5"
       >
