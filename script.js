@@ -27,3 +27,15 @@ function closeModal(modal) {
   modal.classList.remove('active');
   overlay.classList.remove('active');
 }
+
+function showProjectDetails(projectIndex) {
+  fetch('projects.json')
+    .then((response) => response.json())
+    .then((data) => {
+      const modalTitle = document.querySelector('.modalTitle');
+      const modalText = document.querySelector('.modalBody');
+      const result = data.projects[projectIndex];
+      modalTitle.innerHTML = `${result.title}`;
+      modalText = innerHTML = `${result.description}`;
+    });
+}
