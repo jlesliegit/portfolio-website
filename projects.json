@@ -3,44 +3,44 @@
     {
       "title": "Project 1",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vitae voluptates fugiat a rerum deserunt qui? Eaque accusamus quisquam beatae cum eligendi animi doloribus ex iusto nesciunt consequatur delectus.",
-      "image": "images/project_1.png",
+      "image": "images/placeholder_image",
       "alt": "",
       "link": "https://github.com/jlesliegit"
     },
     {
       "title": "Project 2",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vitae voluptates fugiat a rerum deserunt qui? Eaque accusamus quisquam beatae cum eligendi animi doloribus ex iusto nesciunt consequatur delectus.",
-      "image": "images/project_4.png",
+      "image": "images/placeholder_image",
       "alt": "",
       "link": "https://github.com/jlesliegit"
     },
     {
       "title": "Project 3",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vitae voluptates fugiat a rerum deserunt qui? Eaque accusamus quisquam beatae cum eligendi animi doloribus ex iusto nesciunt consequatur delectus.",
-      "image": "images/project_3.png",
+      "image": "images/placeholder_image",
       "alt": "",
       "link": "https://github.com/jlesliegit"
     },
     {
-        "title": "Project 4",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vitae voluptates fugiat a rerum deserunt qui? Eaque accusamus quisquam beatae cum eligendi animi doloribus ex iusto nesciunt consequatur delectus.",
-        "image": "images/project_3.png",
-        "alt": "",
-        "link": "https://github.com/jlesliegit"
-      },
-      {
-        "title": "Project 5",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vitae voluptates fugiat a rerum deserunt qui? Eaque accusamus quisquam beatae cum eligendi animi doloribus ex iusto nesciunt consequatur delectus.",
-        "image": "images/project_3.png",
-        "alt": "",
-        "link": "https://github.com/jlesliegit"
-      },
-      {
-        "title": "Project 6",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vitae voluptates fugiat a rerum deserunt qui? Eaque accusamus quisquam beatae cum eligendi animi doloribus ex iusto nesciunt consequatur delectus.",
-        "image": "images/project_3.png",
-        "alt": "",
-        "link": "https://github.com/jlesliegit"
-      }
+      "title": "Project 4",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vitae voluptates fugiat a rerum deserunt qui? Eaque accusamus quisquam beatae cum eligendi animi doloribus ex iusto nesciunt consequatur delectus.",
+      "image": "images/  placeholder_image",
+      "alt": "",
+      "link": "https://github.com/jlesliegit"
+    },
+    {
+      "title": "Project 5",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vitae voluptates fugiat a rerum deserunt qui? Eaque accusamus quisquam beatae cum eligendi animi doloribus ex iusto nesciunt consequatur delectus.",
+      "image": "images/  placeholder_image",
+      "alt": "",
+      "link": "https://github.com/jlesliegit"
+    },
+    {
+      "title": "Project 6",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vitae voluptates fugiat a rerum deserunt qui? Eaque accusamus quisquam beatae cum eligendi animi doloribus ex iusto nesciunt consequatur delectus.",
+      "image": "images/  placeholder_image",
+      "alt": "",
+      "link": "https://github.com/jlesliegit"
+    }
   ]
 }
