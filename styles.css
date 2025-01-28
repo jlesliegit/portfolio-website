@@ -1,9 +1,10 @@
 .modal {
-    display: none;
-  }
-  .modal.active {
-    display: block;
-  }
-  .overlay.active {
-    display: block;
-  }
+  display: none;
+}
+.modal.active {
+  display: block;
+  pointer-events: all;
+}
+.overlay.active {
+  display: block;
+}
