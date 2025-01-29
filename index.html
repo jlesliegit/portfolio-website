@@ -15,7 +15,7 @@
   <body class="m-0 bg-[#fffff8] font-thin">
     <!-- Nav header -->
     <header
-      class="fixed top-0 left-0 w-full bg-[#D6D6CA] px-4 py-3 text-black max-sm:flex-col max-sm:gap-3 z-10"
+      class="fixed top-0 left-0 w-full bg-transparent px-4 py-3 text-black max-sm:flex-col max-sm:gap-3 z-10"
     >
       <nav
         class="flex justify-between items-center px-4 py-3 w-full text-black max-sm:flex-col max-sm: gap-3"
@@ -32,17 +32,19 @@
 
     <!-- About me -->
     <section
-      class="grid grid-cols-2 gap-20 items-center justify-items-center mt-20 p-30 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:gap-10"
+      class="flex flex-col gap-10 items-center justify-center justify-items-end mt-0 p-30 bg-linear-to-b from-[#818C78] from-10% via-[#A7B49E] via-30% to-[#FFFFF8] max-sm:flex max-sm:flex-col max-sm:items-center max-sm:gap-10"
       id="about"
     >
-      <div>
+      <div class="">
         <img
           src="Images/profile image.jpeg"
           alt="Jack Leslie's headshot"
-          class="size-70 rounded-full max-sm:size-45"
+          class="size-65 rounded-full max-sm:size-45 drop-shadow-3xl"
         />
       </div>
-      <div class="flex flex-col gap-4 max-sm:items-center max-sm:gap-8">
+      <div
+        class="flex flex-col gap-4 text-center justify-center items-center max-sm:items-center max-sm:gap-8"
+      >
         <h1 class="titleText text-6xl max-sm:text-center max-sm:hidden"></h1>
         <h2
           class="text-xl italic max-sm:text-center max-sm:font-normal max-sm:animate-none max-sm:not-italic"
@@ -50,7 +52,7 @@
           Aspiring software dev
         </h2>
         <p
-          class="max-w-8/10 text-lg max-sm:max-w-full max-sm:items-center max-sm:text-center"
+          class="text-lg text-center justify-centermax-sm:max-w-full max-sm:items-center max-sm:text-center"
         >
           I'm an aspiring software developer based in Bristol, currently honing
           my skills at
@@ -71,20 +73,49 @@
         </p>
 
         <ul
-          class="max-sm:grid max-sm:grid-cols-2 max-sm:gap-10 max-sm:text-center max-sm:font-normal"
+          class="grid grid-cols-2 max-w-50 justify-self-center animate-pulse text-left max-sm:gap-50 max-sm:text-center max-sm:font-normal"
         >
-          <li><span class="max-sm:hidden">-</span> JavaScript</li>
-          <li><span class="max-sm:hidden">-</span> HTML</li>
-          <li><span class="max-sm:hidden">-</span> CSS</li>
-          <li><span class="max-sm:hidden">-</span> React</li>
-          <li><span class="max-sm:hidden">-</span> PHP</li>
-          <li><span class="max-sm:hidden">-</span> SQL</li>
+          <li>
+            <span class="max-sm:hidden">[</span>HTML<span class="max-sm:hidden"
+              >]</span
+            >
+          </li>
+
+          <li>
+            <span class="max-sm:hidden">[</span>JavaScript<span
+              class="max-sm:hidden"
+              >]</span
+            >
+          </li>
+          <li>
+            <span class="max-sm:hidden">[</span>CSS<span class="max-sm:hidden"
+              >]</span
+            >
+          </li>
+          <li>
+            <span class="max-sm:hidden">[</span>React<span class="max-sm:hidden"
+              >]</span
+            >
+          </li>
+          <li>
+            <span class="max-sm:hidden">[</span>PHP<span class="max-sm:hidden"
+              >]</span
+            >
+          </li>
+          <li>
+            <span class="max-sm:hidden">[</span>SQL<span class="max-sm:hidden"
+              >]</span
+            >
+          </li>
         </ul>
       </div>
     </section>
 
     <!-- Projects -->
-    <main class="flex flex-col items-center justify-center" id="portfolio">
+    <main
+      class="flex flex-col items-center justify-center mt-14"
+      id="portfolio"
+    >
       <h2 class="text-4xl text-center mb-6 max-sm:text-4xl">Projects</h2>
       <div
         class="projectGallery grid grid-cols-3 gap-16 items-center justify-center mt-10 max-sm:grid-cols-1 max-sm:px-4 max-sm:gap-5"
