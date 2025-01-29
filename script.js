@@ -37,6 +37,41 @@ function closeModal(modal) {
   overlay.classList.remove('active');
 }
 
+fetch('projects.json')
+  .then((response) => response.json())
+  .then((data) => {
+    data.projects.forEach((project) => {
+      let projectDisplay = document.createElement('div');
+      projectDisplay.classList.add(
+        'relative',
+        'w-[300px]',
+        'h-[300px]',
+        'md:h-auto',
+        'flex',
+        'flex-col',
+        'items-center',
+        'max-sm:mb-10',
+        'cursor-pointer'
+      );
+
+      const image = document.createElement('img');
+      image.src = project.image;
+      image.alt = project.alt;
+      image.className = 'object-cover w-full h-full rounded-3xl';
+
+      let title = document.createElement('h3');
+      title.className =
+        'projectTitle hidden max-sm:block max-sm:text-2xl max-sm:mt-3 md:flex md:absolute md:inset-0 md:items-center md:justify-center md:text-4xl md:text-white md:bg-[rgba(0,0,0,1)] md:opacity-0 md:transition-opacity md:duration-300 md:hover:opacity-50 md:rounded-3xl md:hover:font-bold';
+      title.innerText = project.title;
+
+      projectDisplay.append(image);
+      projectDisplay.append(title);
+
+      const gallery = document.querySelector('.projectGallery');
+      gallery.appendChild(projectDisplay);
+    });
+  });
+
 function showProjectDetails(projectIndex) {
   fetch('projects.json')
     .then((response) => response.json())
