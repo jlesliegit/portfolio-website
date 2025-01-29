@@ -1,3 +1,5 @@
+'use sctrict;';
+
 const openModalButtons = document.querySelectorAll('[data-modal-target]');
 const closeModalButtons = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
@@ -56,3 +58,17 @@ function showProjectDetails(projectIndex) {
       modalImage.appendChild(image);
     });
 }
+
+let i = 0;
+let text = 'Jack Leslie';
+let speed = 100;
+
+function typeWriter() {
+  if (i < text.length) {
+    document.querySelector('.titleText').innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', typeWriter());
