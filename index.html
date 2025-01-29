@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,7 +25,7 @@
         <div class="flex gap-3">
           <a href="#about" class="hover:font-normal">About</a>
           <a href="#portfolio" class="hover:font-normal">Portfolio</a>
-          <a href="#" class="hover:font-normal">Contact me</a>
+          <a href="#contact" class="hover:font-normal">Contact me</a>
         </div>
       </nav>
     </header>
@@ -44,11 +44,11 @@
       </div>
       <div class="flex flex-col gap-4 max-sm:items-center max-sm:gap-8">
         <h1 class="text-6xl max-sm:text-center max-sm:hidden">Jack Leslie</h1>
-        <p
-          class="text-xl italic animate-pulse max-sm:text-center max-sm:font-normal max-sm:animate-none max-sm:not-italic"
+        <h2
+          class="text-xl italic max-sm:text-center max-sm:font-normal max-sm:animate-none max-sm:not-italic"
         >
           Aspiring software dev
-        </p>
+        </h2>
         <p
           class="max-w-8/10 text-lg max-sm:max-w-full max-sm:items-center max-sm:text-center"
         >
@@ -92,84 +92,96 @@
         <div
           onclick="showProjectDetails(0)"
           data-modal-target="#modal"
-          class="flex flex-col justify-center text-center"
+          class="relative w-[300px] h-[300px] md:h-auto flex flex-col items-center max-sm:mb-10 cursor-pointer"
         >
           <img
             src="https://placehold.co/300x300"
             alt=""
-            class="object-cover rounded-3xl"
+            class="object-cover w-full h-full rounded-3xl"
           />
-          <h3 class="hidden text-2xl max-sm:inline-block mt-5">
+          <h3
+            class="hidden max-sm:block max-sm:text-2xl max-sm:mt-3 md:flex md:absolute md:inset-0 md:items-center md:justify-center md:text-4xl md:text-white md:bg-[rgba(0,0,0,1)] md:opacity-0 md:transition-opacity md:duration-300 md:hover:opacity-50 md:rounded-3xl md:hover:font-bold"
+          >
             Project title
           </h3>
         </div>
         <div
           onclick="showProjectDetails(1)"
           data-modal-target="#modal"
-          class="flex flex-col justify-center text-center"
+          class="relative w-[300px] h-[300px] md:h-auto flex flex-col items-center max-sm:mb-10 cursor-pointer"
         >
           <img
             src="https://placehold.co/300x300"
             alt=""
-            class="object-cover rounded-3xl"
+            class="object-cover w-full h-full rounded-3xl"
           />
-          <h3 class="hidden text-2xl max-sm:inline-block mt-5">
+          <h3
+            class="hidden max-sm:block max-sm:text-2xl max-sm:mt-3 md:flex md:absolute md:inset-0 md:items-center md:justify-center md:text-4xl md:text-white md:bg-[rgba(0,0,0,1)] md:opacity-0 md:transition-opacity md:duration-300 md:hover:opacity-50 md:rounded-3xl md:hover:font-bold"
+          >
             Project title
           </h3>
         </div>
         <div
           onclick="showProjectDetails(2)"
           data-modal-target="#modal"
-          class="flex flex-col justify-center text-center"
+          class="relative w-[300px] h-[300px] md:h-auto flex flex-col items-center max-sm:mb-10 cursor-pointer"
         >
           <img
             src="https://placehold.co/300x300"
             alt=""
-            class="object-cover rounded-3xl"
+            class="object-cover w-full h-full rounded-3xl"
           />
-          <h3 class="hidden text-2xl max-sm:inline-block mt-5">
+          <h3
+            class="hidden max-sm:block max-sm:text-2xl max-sm:mt-3 md:flex md:absolute md:inset-0 md:items-center md:justify-center md:text-4xl md:text-white md:bg-[rgba(0,0,0,1)] md:opacity-0 md:transition-opacity md:duration-300 md:hover:opacity-50 md:rounded-3xl md:hover:font-bold"
+          >
             Project title
           </h3>
         </div>
         <div
           onclick="showProjectDetails(3)"
           data-modal-target="#modal"
-          class="flex flex-col justify-center text-center"
+          class="relative w-[300px] h-[300px] md:h-auto flex flex-col items-center max-sm:mb-10 cursor-pointer"
         >
           <img
             src="https://placehold.co/300x300"
             alt=""
-            class="object-cover rounded-3xl"
+            class="object-cover w-full h-full rounded-3xl"
           />
-          <h3 class="hidden text-2xl max-sm:inline-block mt-5">
+          <h3
+            class="hidden max-sm:block max-sm:text-2xl max-sm:mt-3 md:flex md:absolute md:inset-0 md:items-center md:justify-center md:text-4xl md:text-white md:bg-[rgba(0,0,0,1)] md:opacity-0 md:transition-opacity md:duration-300 md:hover:opacity-50 md:rounded-3xl md:hover:font-bold"
+          >
             Project title
           </h3>
         </div>
         <div
           onclick="showProjectDetails(4)"
           data-modal-target="#modal"
-          class="flex flex-col justify-center text-center"
+          class="relative w-[300px] h-[300px] md:h-auto flex flex-col items-center max-sm:mb-10 cursor-pointer"
         >
           <img
             src="https://placehold.co/300x300"
             alt=""
-            class="object-cover rounded-3xl"
+            class="object-cover w-full h-full rounded-3xl"
           />
-          <h3 class="hidden text-2xl max-sm:inline-block mt-5">
+          <h3
+            class="hidden max-sm:block max-sm:text-2xl max-sm:mt-3 md:flex md:absolute md:inset-0 md:items-center md:justify-center md:text-4xl md:text-white md:bg-[rgba(0,0,0,1)] md:opacity-0 md:transition-opacity md:duration-300 md:hover:opacity-50 md:rounded-3xl md:hover:font-bold"
+          >
             Project title
           </h3>
         </div>
         <div
           onclick="showProjectDetails(5)"
           data-modal-target="#modal"
-          class="flex flex-col justify-center text-center"
+          class="relative w-[300px] h-[300px] md:h-auto flex flex-col items-center max-sm:mb-10 cursor-pointer"
         >
           <img
             src="https://placehold.co/300x300"
             alt=""
-            class="object-cover rounded-3xl"
+            class="object-cover w-full h-full rounded-3xl"
           />
-          <h3 class="hidden text-2xl max-sm:inline-block mt-5">
+          <h3
+            class="hidden max-sm:block max-sm:text-2xl max-sm:mt-3 md:flex md:absolute md:inset-0 md:items-center md:justify-center md:text-4xl md:text-white md:bg-[rgba(0,0,0,1)] md:opacity-0 md:transition-opacity md:duration-300 md:hover:opacity-50 md:rounded-3xl md:hover:font-bold"
+          >
             Project title
           </h3>
         </div>
@@ -185,7 +197,7 @@
 
     <div
       id="modal"
-      class="modal fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] border-2 rounded-lg z-10 bg-white w-[500px] max-w-[80%] hidden"
+      class="modal fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] drop-shadow-2xl rounded-lg z-10 bg-white w-[500px] max-w-[80%] hidden"
     >
       <div class="modalHeader flex justify-between pt-4 pl-4 pr-4 items-center">
         <div class="modalTitle text-lg font-normal">Example title</div>
@@ -206,6 +218,7 @@
       </div>
     </div>
     <footer
+      id="contact"
       class="flex flex-col gap-4 mt-20 pl-4 bg-[#d6d6ca] p-6 justify-center items-center max-sm:p-10 max-sm:gap-5"
     >
       <h3 class="text-3xl">Contact me</h3>
