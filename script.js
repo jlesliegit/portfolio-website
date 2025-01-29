@@ -1,76 +1,108 @@
 'use sctrict;';
-
-const openModalButtons = document.querySelectorAll('[data-modal-target]');
-const closeModalButtons = document.querySelectorAll('[data-close-button]');
-const overlay = document.getElementById('overlay');
-
-openModalButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const modal = document.querySelector(button.dataset.modalTarget);
-    openModal(modal);
-  });
-});
-
-closeModalButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const modal = button.closest('.modal');
-    closeModal(modal);
-  });
-});
-
-overlay.addEventListener('click', () => {
-  const modals = document.querySelectorAll('.modal.active');
-  modals.forEach((modal) => {
-    closeModal(modal);
-  });
-});
-
-function openModal(modal) {
-  if (modal == null) return;
-  modal.classList.add('active');
-  overlay.classList.add('active');
-}
-
-function closeModal(modal) {
-  if (modal == null) return;
-  modal.classList.remove('active');
-  overlay.classList.remove('active');
-}
-
-fetch('projects.json')
-  .then((response) => response.json())
-  .then((data) => {
-    data.projects.forEach((project) => {
-      let projectDisplay = document.createElement('div');
-      projectDisplay.classList.add(
-        'relative',
-        'w-[300px]',
-        'h-[300px]',
-        'md:h-auto',
-        'flex',
-        'flex-col',
-        'items-center',
-        'max-sm:mb-10',
-        'cursor-pointer'
+document.addEventListener('DOMContentLoaded', () => {
+  fetch('projects.json')
+    .then((response) => response.json())
+    .then((data) => {
+      let overlay = document.createElement('div');
+      overlay.id = 'overlay';
+      overlay.classList.add(
+        'fixed',
+        'inset-0',
+        'bg-black',
+        'opacity-50',
+        'hidden',
+        'z-10'
       );
-
-      const image = document.createElement('img');
-      image.src = project.image;
-      image.alt = project.alt;
-      image.className = 'object-cover w-full h-full rounded-3xl';
-
-      let title = document.createElement('h3');
-      title.className =
-        'projectTitle hidden max-sm:block max-sm:text-2xl max-sm:mt-3 md:flex md:absolute md:inset-0 md:items-center md:justify-center md:text-4xl md:text-white md:bg-[rgba(0,0,0,1)] md:opacity-0 md:transition-opacity md:duration-300 md:hover:opacity-50 md:rounded-3xl md:hover:font-bold';
-      title.innerText = project.title;
-
-      projectDisplay.append(image);
-      projectDisplay.append(title);
+      document.body.appendChild(overlay);
 
       const gallery = document.querySelector('.projectGallery');
-      gallery.appendChild(projectDisplay);
+
+      data.projects.forEach((project, index) => {
+        let projectDisplay = document.createElement('div');
+        projectDisplay.classList.add(
+          'relative',
+          'w-[300px]',
+          'h-[300px]',
+          'md:h-auto',
+          'flex',
+          'flex-col',
+          'items-center',
+          'max-sm:mb-10',
+          'cursor-pointer'
+        );
+
+        const modalId = `modal-${index}`;
+        projectDisplay.setAttribute('data-modal-target', `#${modalId}`);
+
+        const image = document.createElement('img');
+        image.src = project.image;
+        image.alt = project.alt;
+        image.className = 'object-cover w-full h-full rounded-3xl';
+
+        let title = document.createElement('h3');
+        title.className =
+          'projectTitle hidden max-sm:block max-sm:text-2xl max-sm:mt-3 md:flex md:absolute md:inset-0 md:items-center md:justify-center md:text-4xl md:text-white md:bg-[rgba(0,0,0,1)] md:opacity-0 md:transition-opacity md:duration-300 md:hover:opacity-50 md:rounded-3xl md:hover:font-bold';
+        title.innerText = project.title;
+
+        projectDisplay.appendChild(image);
+        projectDisplay.appendChild(title);
+        gallery.appendChild(projectDisplay);
+
+        const modal = document.createElement('div');
+        modal.id = modalId;
+        modal.className =
+          'modal fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] drop-shadow-2xl rounded-lg z-10 bg-white w-[500px] max-w-[80%] hidden';
+
+        modal.innerHTML = `
+            <div class="modal-content bg-white p-6 rounded-lg shadow-lg relative max-w-lg w-full max-h-[90vh] overflow-y-auto mx-auto">
+
+              <div class="modalHeader flex justify-between items-center">
+                <h2 class="modalTitle text-xl font-semibold">${project.title}</h2>
+                <button class="closeButton cursor-pointer text-2xl">&times;</button>
+              </div>
+              <div class="modalImage my-4">
+                <img src="${project.image}" alt="${project.alt}" class="w-full h-60 object-cover rounded-3xl">
+              </div>
+              <div class="modalBody">${project.description}</div>
+            </div>
+          `;
+        document.body.appendChild(modal);
+
+        projectDisplay.addEventListener('click', () => {
+          const modal = document.querySelector(
+            projectDisplay.dataset.modalTarget
+          );
+          openModal(modal);
+        });
+      });
+
+      document.body.addEventListener('click', (event) => {
+        if (event.target.matches('.closeButton')) {
+          const modal = event.target.closest('.modal');
+          closeModal(modal);
+        }
+      });
+
+      overlay.addEventListener('click', () => {
+        const activeModals = document.querySelectorAll('.modal.active');
+        activeModals.forEach(closeModal);
+      });
+
+      function openModal(modal) {
+        modal.classList.remove('hidden');
+        modal.classList.add('active');
+        overlay.classList.remove('hidden');
+        overlay.classList.add('active');
+      }
+
+      function closeModal(modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('active');
+        overlay.classList.add('hidden');
+        overlay.classList.remove('active');
+      }
     });
-  });
+});
 
 function showProjectDetails(projectIndex) {
   fetch('projects.json')
