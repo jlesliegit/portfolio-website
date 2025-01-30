@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let title = document.createElement('h3');
         title.className =
-          'projectTitle lg-hidden lg-absolute max-sm:block max-sm:text-2xl max-sm:mt-3 md:flex md:absolute md:inset-0 md:items-center md:justify-center md:text-4xl md:text-white md:bg-[rgba(0,0,0,1)] md:opacity-0 md:transition-opacity md:duration-300 md:hover:opacity-50 md:rounded-3xl md:hover:font-bold';
+          'projectTitle lg:transparent lg:absolute md:block max-sm:block max-sm:text-2xl max-sm:mt-3 md:flex md:absolute md:inset-0 md:items-center md:justify-center md:text-4xl md:text-white md:bg-[rgba(0,0,0,1)] md:opacity-0 md:transition-opacity md:duration-300 md:hover:opacity-50 md:rounded-3xl md:hover:font-bold';
         title.innerText = project.title;
 
         projectDisplay.appendChild(image);
@@ -132,7 +132,7 @@ let i = 0; // index for title text
 let j = 0; // index for tagline text
 
 let titleText = 'Jack Leslie';
-let taglineText = 'Aspiring Software Developer';
+let taglineText = "I'm an aspiring Software Developer based in Bristol";
 
 function typeWriterTitle(fn, speed) {
   if (i < titleText.length) {
