@@ -18,7 +18,7 @@
   visibility: hidden;
 }
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1000px) {
   #animationTarget {
     animation: reveal ease-in-out forwards;
     animation-timeline: view();

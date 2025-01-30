@@ -11,8 +11,14 @@
       src="https://kit.fontawesome.com/3a6c28ddb5.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="m-0 bg-[#fffff8] font-thin">
+  <body class="m-0 bg-[#fffff8] font-['Montserrat',serif]">
     <!-- Nav header -->
     <header
       class="fixed top-0 left-0 w-full lg:bg-transparent px-4 py-3 text-black max-sm:flex-col max-sm:gap-3 max-sm:bg-[#818B77] md:bg-[#818B77] max-md:bg-[#818B77] z-10"
@@ -22,10 +28,10 @@
       >
         <p class="text-xl max-sm:font-normal">Jack Leslie</p>
 
-        <div class="flex gap-3">
-          <a href="#about" class="hover:font-normal">About</a>
-          <a href="#portfolio" class="hover:font-normal">Portfolio</a>
-          <a href="#contact" class="hover:font-normal">Contact me</a>
+        <div class="flex gap-3 text-xl">
+          <a href="#about" class="hover:font-bold">About</a>
+          <a href="#portfolio" class="hover:font-bold">Portfolio</a>
+          <a href="#contact" class="hover:font-bold">Contact me</a>
         </div>
       </nav>
     </header>
@@ -57,7 +63,7 @@
           >
             <span class="cursor"></span>
           </h2>
-          <p class="text-lg text-center max-sm:max-w-full max-sm:text-center">
+          <p class="text-xl text-center max-sm:max-w-full max-sm:text-center">
             I'm an aspiring software developer based in Bristol, currently
             honing my skills at
             <span
@@ -71,13 +77,13 @@
             through an intensive 12-week bootcamp with the goal of becoming a
             full-stack developer.
           </p>
-          <p class="max-sm:text-center">
+          <p class="text-xl max-sm:text-center">
             Currently learning how to use a variety of different technologies
             including:
           </p>
 
           <ul
-            class="grid grid-cols-2 max-w-50 justify-self-center text-left max-sm:animate-none max-sm:gap-5 max-sm:text-start max-sm:font-normal"
+            class="text-xl grid grid-cols-2 max-w-50 justify-self-center text-left max-sm:animate-none max-sm:gap-5 max-sm:text-start max-sm:font-normal"
           >
             <li>
               <span class="max-sm:hidden">[</span>HTML<span
