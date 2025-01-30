@@ -73,7 +73,7 @@
         </p>
 
         <ul
-          class="grid grid-cols-2 max-w-50 justify-self-center text-left max-sm:animate-none max-sm:gap-10 max-sm:text-center max-sm:font-normal"
+          class="grid grid-cols-2 max-w-50 justify-self-center text-left max-sm:animate-none max-sm:gap-5 max-sm:text-start max-sm:font-normal"
         >
           <li>
             <span class="max-sm:hidden">[</span>HTML<span class="max-sm:hidden"
@@ -116,34 +116,39 @@
       class="flex flex-col items-center justify-center mt-14"
       id="portfolio"
     >
-      <h2 class="text-4xl text-center mb-6 max-sm:text-4xl">Projects</h2>
+      <h3 class="text-5xl text-center mb-8 max-sm:text-4xl">Projects</h3>
       <div
-        class="projectGallery grid grid-cols-3 gap-16 items-center justify-center mt-10 max-sm:grid-cols-1 max-sm:px-4 max-sm:gap-5"
+        class="projectGallery grid grid-cols-3 gap-16 items-center justify-center mt-10 mb-10 max-sm:grid-cols-1 max-sm:px-4 max-sm:gap-5"
       ></div>
     </main>
 
-    <footer
-      id="contact"
-      class="flex flex-col gap-4 mt-20 pl-4 bg-[#d6d6ca] p-6 justify-center items-center max-sm:p-10 max-sm:gap-5"
-    >
-      <h3 class="text-3xl">Contact me</h3>
-      <p class="text-lg max-sm:max-w-80 max-sm:text-center">
+    <!-- Contact Me -->
+    <section id="contact" class="p-20 flex flex-col gap-14 items-center">
+      <h3 class="text-5xl">Contact me</h3>
+      <p class="text-2xl max-sm:max-w-80 max-sm:text-center">
         If you would like to get in touch regarding any of my work, please reach
         out
       </p>
       <div class="flex gap-4 align-middle">
         <a href="mailto:jackandrewleslie@gmail.com"
-          ><i class="fa-regular fa-envelope text-2xl hover:text-[#8f968d]"></i
+          ><i
+            class="emailIcon fa-regular fa-envelope text-6xl hover:text-[#8f968d]"
+          ></i
         ></a>
         <a href="https://github.com/jlesliegit" target="_blank"
           ><i
-            class="fa-brands fa-square-github hover:text-[#8f968d] text-2xl"
+            class="gitHubIcon fa-brands fa-square-github hover:text-[#8f968d] text-6xl"
           ></i
         ></a>
         <a href="https://www.linkedin.com/in/jack-leslie-/" target="_blank"
-          ><i class="fa-brands fa-linkedin text-2xl hover:text-[#8f968d]"></i
+          ><i
+            class="linkedInIcon fa-brands fa-linkedin text-6xl hover:text-[#8f968d]"
+          ></i
         ></a>
       </div>
-    </footer>
+    </section>
+    <footer
+      class="bg-gradient-to-t from-[#818C78] from-10% via-[#A7B49E] via-30% to-[#FFFFF8] p-8 font-normal"
+    ></footer>
   </body>
 </html>
