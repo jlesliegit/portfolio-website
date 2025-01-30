@@ -15,7 +15,7 @@
   <body class="m-0 bg-[#fffff8] font-thin">
     <!-- Nav header -->
     <header
-      class="fixed top-0 left-0 w-full lg:bg-transparent px-4 py-3 text-black max-sm:flex-col max-sm:gap-3 max-sm:bg-[#818B77] md:bg-[#818B77] z-10"
+      class="fixed top-0 left-0 w-full lg:bg-transparent px-4 py-3 text-black max-sm:flex-col max-sm:gap-3 max-sm:bg-[#818B77] md:bg-[#818B77] max-md:bg-[#818B77] z-10"
     >
       <nav
         class="flex justify-between items-center px-4 py-3 w-full text-black max-sm:flex-col max-sm: gap-3"
@@ -35,79 +35,86 @@
       class="flex flex-col gap-10 items-center justify-center justify-items-end mt-0 p-30 bg-linear-to-b from-[#818C78] from-10% via-[#A7B49E] via-30% to-[#FFFFF8] max-sm:flex max-sm:flex-col max-sm:items-center max-sm:gap-10"
       id="about"
     >
-      <div class="">
-        <img
-          src="Images/profile image.jpeg"
-          alt="Jack Leslie's headshot"
-          class="size-65 rounded-full drop-shadow-3xl max-sm:size-35"
-        />
-      </div>
-      <div
-        class="flex flex-col gap-4 text-center justify-center items-center max-sm:items-center max-sm:gap-8 max-sm:max-w-full max-sm:text-md"
-      >
-        <h1 class="titleText text-6xl max-sm:text-center max-sm:hidden"></h1>
-        <h2
-          class="taglineText text-xl italic max-sm:text-center max-sm:font-normal max-sm:not-italic"
+      <div id="animationTarget">
+        <div class="flex justify-center gap-4">
+          <img
+            src="Images/profile image.jpeg"
+            alt="Jack Leslie's headshot"
+            class="size-65 p-6 rounded-full drop-shadow-3xl max-sm:size-35"
+            id="headshot"
+          />
+        </div>
+        <div
+          class="flex flex-col gap-4 text-center justify-center items-center max-sm:items-center max-sm:gap-8 max-sm:max-w-full max-sm:text-md"
         >
-          <span class="cursor"></span>
-        </h2>
-        <p
-          class="bioText text-lg text-center justify-center max-sm:max-w-full max-sm:text-center"
-        >
-          I'm an aspiring software developer based in Bristol, currently honing
-          my skills at
-          <span
-            ><a
-              href="https://io-academy.uk/courses/software-developer-essentials/"
-              target="_blank"
-              class="hover:text-[#8f968d]"
-              >iO Academy</a
-            ></span
+          <h1
+            class="titleText text-6xl max-sm:text-center max-sm:hidden"
+            id="title"
+          ></h1>
+          <h2
+            class="taglineText text-xl italic max-sm:text-center max-sm:font-normal max-sm:not-italic"
+            id="tagline"
           >
-          through an intensive 12-week bootcamp with the goal of becoming a
-          full-stack developer.
-        </p>
-        <p class="max-sm:text-center">
-          Currently learning how to use a variety of different technologies
-          including:
-        </p>
+            <span class="cursor"></span>
+          </h2>
+          <p class="text-lg text-center max-sm:max-w-full max-sm:text-center">
+            I'm an aspiring software developer based in Bristol, currently
+            honing my skills at
+            <span
+              ><a
+                href="https://io-academy.uk/courses/software-developer-essentials/"
+                target="_blank"
+                class="hover:text-[#8f968d]"
+                >iO Academy</a
+              ></span
+            >
+            through an intensive 12-week bootcamp with the goal of becoming a
+            full-stack developer.
+          </p>
+          <p class="max-sm:text-center">
+            Currently learning how to use a variety of different technologies
+            including:
+          </p>
 
-        <ul
-          class="grid grid-cols-2 max-w-50 justify-self-center text-left max-sm:animate-none max-sm:gap-5 max-sm:text-start max-sm:font-normal"
-        >
-          <li>
-            <span class="max-sm:hidden">[</span>HTML<span class="max-sm:hidden"
-              >]</span
-            >
-          </li>
+          <ul
+            class="grid grid-cols-2 max-w-50 justify-self-center text-left max-sm:animate-none max-sm:gap-5 max-sm:text-start max-sm:font-normal"
+          >
+            <li>
+              <span class="max-sm:hidden">[</span>HTML<span
+                class="max-sm:hidden"
+                >]</span
+              >
+            </li>
 
-          <li>
-            <span class="max-sm:hidden">[</span>JavaScript<span
-              class="max-sm:hidden"
-              >]</span
-            >
-          </li>
-          <li>
-            <span class="max-sm:hidden">[</span>CSS<span class="max-sm:hidden"
-              >]</span
-            >
-          </li>
-          <li>
-            <span class="max-sm:hidden">[</span>React<span class="max-sm:hidden"
-              >]</span
-            >
-          </li>
-          <li>
-            <span class="max-sm:hidden">[</span>PHP<span class="max-sm:hidden"
-              >]</span
-            >
-          </li>
-          <li>
-            <span class="max-sm:hidden">[</span>SQL<span class="max-sm:hidden"
-              >]</span
-            >
-          </li>
-        </ul>
+            <li>
+              <span class="max-sm:hidden">[</span>JavaScript<span
+                class="max-sm:hidden"
+                >]</span
+              >
+            </li>
+            <li>
+              <span class="max-sm:hidden">[</span>CSS<span class="max-sm:hidden"
+                >]</span
+              >
+            </li>
+            <li>
+              <span class="max-sm:hidden">[</span>React<span
+                class="max-sm:hidden"
+                >]</span
+              >
+            </li>
+            <li>
+              <span class="max-sm:hidden">[</span>PHP<span class="max-sm:hidden"
+                >]</span
+              >
+            </li>
+            <li>
+              <span class="max-sm:hidden">[</span>SQL<span class="max-sm:hidden"
+                >]</span
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -116,7 +123,7 @@
       class="flex flex-col items-center justify-center mt-14"
       id="portfolio"
     >
-      <h3 class="text-5xl text-center mb-8 max-sm:text-4xl">Projects</h3>
+      <h3 class="text-5xl text-center mb-8 max-sm:text-4xl">My work</h3>
       <div
         class="projectGallery grid lg:grid-cols-3 gap-16 items-center justify-center mt-10 mb-10 max-sm:grid-cols-1 max-sm:px-4 max-sm:gap-5 md:grid-cols-2"
       ></div>
@@ -133,17 +140,17 @@
       <div class="flex gap-4 align-middle">
         <a href="mailto:jackandrewleslie@gmail.com"
           ><i
-            class="emailIcon fa-regular fa-envelope text-6xl hover:text-[#8f968d]"
+            class="emailIcon fa-regular fa-envelope text-6xl ease-in-out hover:text-[#8f968d] hover:scale-125"
           ></i
         ></a>
         <a href="https://github.com/jlesliegit" target="_blank"
           ><i
-            class="gitHubIcon fa-brands fa-square-github hover:text-[#8f968d] text-6xl"
+            class="gitHubIcon fa-brands fa-square-github text-6xl hover:text-[#8f968d] hover:scale-125"
           ></i
         ></a>
         <a href="https://www.linkedin.com/in/jack-leslie-/" target="_blank"
           ><i
-            class="linkedInIcon fa-brands fa-linkedin text-6xl hover:text-[#8f968d]"
+            class="linkedInIcon fa-brands fa-linkedin text-6xl hover:text-[#8f968d] hover:scale-125"
           ></i
         ></a>
       </div>
