@@ -8,3 +8,12 @@
 .overlay.active {
   display: block;
 }
+
+.cursor {
+  visibility: visible;
+  transition: visibility 0.3s ease;
+}
+
+.cursor.blinkOff {
+  visibility: hidden;
+}

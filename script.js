@@ -126,16 +126,41 @@ function showProjectDetails(projectIndex) {
     });
 }
 
-let i = 0;
-let text = 'Jack Leslie';
-let speed = 100;
+let i = 0; // index for title text
+let j = 0; // index for tagline text
 
-function typeWriter() {
-  if (i < text.length) {
-    document.querySelector('.titleText').innerHTML += text.charAt(i);
+let titleText = 'Jack Leslie';
+let taglineText = 'Aspiring Software Developer';
+
+function typeWriterTitle(fn, speed) {
+  if (i < titleText.length) {
+    document.querySelector('.titleText').innerHTML += titleText.charAt(i);
     i++;
-    setTimeout(typeWriter, speed);
+    setTimeout(typeWriterTitle, 100);
+  } else {
+    typewriterTagline();
   }
 }
 
-document.addEventListener('DOMContentLoaded', typeWriter());
+function typewriterTagline(fn, speed) {
+  if (j < taglineText.length) {
+    document.querySelector('.taglineText').innerHTML += taglineText.charAt(j);
+    j++;
+    setTimeout(typewriterTagline, 45);
+  } else {
+    cursorBlink();
+  }
+}
+
+const tagline = document.querySelector('.taglineText');
+const cursorElement = document.createElement('span');
+cursorElement.innerText = '|';
+cursorElement.classList.add('cursor');
+
+function cursorBlink() {
+  tagline.appendChild(cursorElement);
+  cursorElement.classList.toggle('blinkOff');
+  setTimeout(cursorBlink, 500);
+}
+
+document.addEventListener('DOMContentLoaded', typeWriterTitle);
