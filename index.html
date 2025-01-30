@@ -38,7 +38,7 @@
 
     <!-- About me -->
     <section
-      class="flex flex-col gap-10 items-center justify-center justify-items-end mt-0 p-30 bg-linear-to-b from-[#818C78] from-10% via-[#A7B49E] via-30% to-[#FFFFF8] max-sm:flex max-sm:flex-col max-sm:items-center max-sm:gap-10"
+      class="flex flex-col gap-10 items-center justify-center justify-items-end mt-0 p-20 max-sm:p-2 bg-linear-to-b from-[#818C78] from-10% via-[#A7B49E] via-30% to-[#FFFFF8] max-sm:flex max-sm:flex-col max-sm:items-center max-sm:gap-10"
       id="about"
     >
       <div id="animationTarget">
@@ -46,40 +46,49 @@
           <img
             src="Images/profile image.jpeg"
             alt="Jack Leslie's headshot"
-            class="size-65 p-6 rounded-full drop-shadow-3xl max-sm:size-35"
+            class="size-65 mt-10 max-sm:mt-30 mb-5 p-6 rounded-full drop-shadow-3xl max-sm:size-35"
             id="headshot"
           />
         </div>
         <div
-          class="flex flex-col gap-4 text-center justify-center items-center max-sm:items-center max-sm:gap-8 max-sm:max-w-full max-sm:text-md"
+          class="flex flex-col gap-4 text-center justify-center items-center max-sm:items-center max-sm:gap-8max-sm:text-md"
         >
           <h1
             class="titleText text-6xl max-sm:text-center max-sm:hidden"
             id="title"
           ></h1>
-          <h2 class="taglineText text-xl italic text-center" id="tagline">
+          <h2
+            class="taglineText text-xl italic mb-5 text-center sm:w-full max-sm:w-[90%] mx-auto"
+            id="tagline"
+          >
             <span class="cursor"></span>
           </h2>
 
-          <p class="text-lg text-center max-sm:max-w-full max-sm:text-lg">
-            I'm currently honing my skills at
-            <span
-              ><a
+          <p
+            class="text-lg text-center sm:w-full mb-5 max-sm:w-[90%] mx-auto max-sm:text-lg"
+          >
+            Currently studying at
+            <span>
+              <a
                 href="https://io-academy.uk/courses/software-developer-essentials/"
                 target="_blank"
                 class="hover:text-[#8f968d]"
-                >iO Academy</a
-              ></span
-            >
+              >
+                iO Academy
+              </a>
+            </span>
             through an intensive 12-week bootcamp with the goal of becoming a
             full-stack developer.
           </p>
-          <p class="text-lg max-sm:text-center max-sm:text-md">
+
+          <p
+            class="text-lg max-sm:text-center max-sm:text-md sm:w-full max-sm:w-[90%] mx-auto"
+          >
             Right now, I'm exploring a range of technologies including:
           </p>
 
           <ul
-            class="text-xl grid grid-cols-2 max-w-50 justify-self-center text-left max-sm:animate-none max-sm:gap-5 max-sm:text-start max-sm:font-normal"
+            class="text-xl grid grid-cols-2 max-w-50 justify-self-center text-left max-sm:animate-none max-sm:text-start max-sm:font-normal"
           >
             <li>
               <span class="max-sm:hidden">[</span>HTML<span
