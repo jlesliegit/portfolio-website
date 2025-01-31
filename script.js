@@ -164,3 +164,20 @@ function cursorBlink() {
   cursorElement.classList.toggle('blinkOff');
   setTimeout(cursorBlink, 500);
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.toggle('scrollShow', entry.isIntersecting);
+      }
+    });
+    {
+      threshold: 1;
+    }
+  });
+
+  const hiddenElements = document.querySelectorAll('.scrollHidden');
+  hiddenElements.forEach((element) => observer.observe(element));
+  console.log(hiddenElements.length);
+});
