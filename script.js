@@ -64,6 +64,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 <img src="${project.image}" alt="${project.alt}" class="w-full h-60 object-cover rounded-3xl">
               </div>
               <div class="modalBody">${project.description}</div>
+              <div class="text-center pt-4 flex flex-col gap-1">
+              <a class="fa-brands fa-square-github text-3xl" href=${project.link} target="_blank"><br>
+              <span class="font-['Montserrat',serif] text-lg">View on Github</span></a>
+              </div>
             </div>
           `;
         document.body.appendChild(modal);
