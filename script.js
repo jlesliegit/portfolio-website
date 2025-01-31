@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     },
-    { threshold: 0.6 }
+    { threshold: 0.1 }
   );
 
   const hiddenElements = document.querySelectorAll('.scrollHidden');
