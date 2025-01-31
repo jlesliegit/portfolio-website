@@ -132,7 +132,7 @@ let i = 0; // index for title text
 let j = 0; // index for tagline text
 
 let titleText = 'Jack Leslie';
-let taglineText = "I'm an aspiring Software Developer based in Bristol";
+let taglineText = 'Aspiring Software Developer';
 
 function typeWriterTitle(fn, speed) {
   if (i < titleText.length) {
