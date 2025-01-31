@@ -170,16 +170,21 @@ function cursorBlink() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.toggle('scrollShow', entry.isIntersecting);
-      }
-    });
-    {
-      threshold: 1;
-    }
-  });
+  console.log('DOMContentLoaded');
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('scrollShow');
+          entry.target.classList.remove('scrollHidden');
+        } else {
+          entry.target.classList.add('scrollHidden');
+          entry.target.classList.remove('scrollShow');
+        }
+      });
+    },
+    { threshold: 0.4 }
+  );
 
   const hiddenElements = document.querySelectorAll('.scrollHidden');
   hiddenElements.forEach((element) => observer.observe(element));
