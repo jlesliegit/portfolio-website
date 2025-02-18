@@ -1,11 +1,11 @@
 {
   "projects": [
     {
-      "title": "Project 1",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vitae voluptates fugiat a rerum deserunt qui? Eaque accusamus quisquam beatae cum eligendi animi doloribus ex iusto nesciunt consequatur delectus.",
-      "image": "./Images/elementor-placeholder-image.webp",
+      "title": "Book Swap Library",
+      "description": "As a team of 6 we collaborated using agile methodologies to work with an already existing API to implement a number of features including displaying books, adding new book entries, adding reviews for books and the ability to claim and return books.",
+      "image": "./Images/BookSwapAPI.png",
       "alt": "",
-      "link": "https://github.com/jlesliegit"
+      "link": "https://github.com/iO-Academy/2025-jan-htmelephant-bookswap-fe"
     },
     {
       "title": "Project 2",
@@ -23,20 +23,6 @@
     },
     {
       "title": "Project 4",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vitae voluptates fugiat a rerum deserunt qui? Eaque accusamus quisquam beatae cum eligendi animi doloribus ex iusto nesciunt consequatur delectus.",
-      "image": "./Images/elementor-placeholder-image.webp",
-      "alt": "",
-      "link": "https://github.com/jlesliegit"
-    },
-    {
-      "title": "Project 5",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vitae voluptates fugiat a rerum deserunt qui? Eaque accusamus quisquam beatae cum eligendi animi doloribus ex iusto nesciunt consequatur delectus.",
-      "image": "./Images/elementor-placeholder-image.webp",
-      "alt": "",
-      "link": "https://github.com/jlesliegit"
-    },
-    {
-      "title": "Project 6",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vitae voluptates fugiat a rerum deserunt qui? Eaque accusamus quisquam beatae cum eligendi animi doloribus ex iusto nesciunt consequatur delectus.",
       "image": "./Images/elementor-placeholder-image.webp",
       "alt": "",
