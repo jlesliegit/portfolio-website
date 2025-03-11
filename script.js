@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="modal-content bg-white p-6 rounded-lg shadow-lg relative max-w-lg w-full max-h-[90vh] overflow-y-auto mx-auto">
 
               <div class="modalHeader flex justify-between items-center">
-                <h2 class="modalTitle text-xl font-semibold">${project.title}</h2>
+                <h2 class="modalTitle text-lg font-semibold">${project.title}</h2>
                 <button class="closeButton cursor-pointer text-2xl">&times;</button>
               </div>
               <div class="modalImage my-4">
