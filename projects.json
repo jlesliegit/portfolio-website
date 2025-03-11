@@ -8,7 +8,7 @@
       "link": "https://github.com/iO-Academy/2025-jan-htmelephant-bookswap-fe"
     },
     {
-      "title": "PHP Blog application",
+      "title": "PHP Blog",
       "description": "A PHP application styled with Tailwind CSS to display blog posts retrieved from a MySQL database. Included user authentication and validation to allow interaction with blog posts. Users have functionality to add, blogs, leave comments and like or dislike posts. All information tracked in the Database and shown on front end.",
       "image": "./Images/PHP_blog.png",
       "alt": "",
