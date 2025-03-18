@@ -1,4 +1,4 @@
-'use sctrict;';
+'use strict;';
 document.addEventListener('DOMContentLoaded', () => {
   fetch('projects.json')
     .then((response) => response.json())
@@ -6,12 +6,15 @@ document.addEventListener('DOMContentLoaded', () => {
       let overlay = document.createElement('div');
       overlay.id = 'overlay';
       overlay.classList.add(
+        'flex',
+        'justify-center',
+        'items-center',
         'fixed',
         'inset-0',
         'bg-black',
         'opacity-50',
         'hidden',
-        'z-10'
+        'z-50'
       );
       document.body.appendChild(overlay);
 
@@ -52,25 +55,24 @@ document.addEventListener('DOMContentLoaded', () => {
         const modal = document.createElement('div');
         modal.id = modalId;
         modal.className =
-          'modal fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] drop-shadow-2xl rounded-lg z-10 bg-white w-[500px] max-w-[80%] hidden';
+          'modal fixed hidden drop-shadow-2xl rounded-lg z-50 bg-white w-[500px] max-w-[80%]';
 
         modal.innerHTML = `
             <div class="modal-content bg-white p-6 rounded-lg shadow-lg relative max-w-lg w-full max-h-[90vh] overflow-y-auto mx-auto">
-
-              <div class="modalHeader flex justify-between items-center">
-                <h2 class="modalTitle text-lg font-semibold text-center">${project.title}</h2>
-                <button class="closeButton cursor-pointer text-2xl">&times;</button>
-              </div>
-              <div class="modalImage my-4">
-                <img src="${project.image}" alt="${project.alt}" class="w-full h-60 object-cover rounded-3xl">
-              </div>
-              <div class="modalBody">${project.description}</div>
-              <div class="text-center pt-4 flex flex-col gap-1">
-              <a class="fa-brands fa-square-github text-3xl" href=${project.link} target="_blank"><br>
-              <span class="font-['Montserrat',serif] text-lg">View on Github</span></a>
-              </div>
+                <div class="modalHeader flex justify-between items-center">
+                    <h2 class="modalTitle text-lg font-semibold text-center">${project.title}</h2>
+                    <button class="closeButton cursor-pointer text-2xl">&times;</button>
+                </div>
+                <div class="modalImage my-4">
+                    <img src="${project.image}" alt="${project.alt}" class="w-full h-60 object-cover rounded-3xl">
+                </div>
+                <div class="modalBody">${project.description}</div>
+                <div class="text-center pt-4 flex flex-col gap-1">
+                    <a class="fa-brands fa-square-github text-3xl" href=${project.link} target="_blank"><br>
+                    <span class="font-['Montserrat',serif] text-lg">View on Github</span></a>
+                </div>
             </div>
-          `;
+        `;
         document.body.appendChild(modal);
 
         projectDisplay.addEventListener('click', () => {
@@ -89,22 +91,18 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       overlay.addEventListener('click', () => {
-        const activeModals = document.querySelectorAll('.modal.active');
+        const activeModals = document.querySelectorAll('.modal:not(.hidden)');
         activeModals.forEach(closeModal);
       });
 
       function openModal(modal) {
         modal.classList.remove('hidden');
-        modal.classList.add('active');
         overlay.classList.remove('hidden');
-        overlay.classList.add('active');
       }
 
       function closeModal(modal) {
         modal.classList.add('hidden');
-        modal.classList.remove('active');
         overlay.classList.add('hidden');
-        overlay.classList.remove('active');
       }
     });
 });
